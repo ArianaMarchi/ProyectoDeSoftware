@@ -1,0 +1,146 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a3d4c9; /* Fondo blanco */
+    color: #000; /* Letras negras */
+}
+
+header h1 {
+    text-align: center;
+}
+
+header {
+    background-color: #64bddb; /* Barra de navegación celeste */
+    padding: 10px;
+}
+
+nav { 
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 100;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Letras blancas */
+    padding: 20px 40px; /* Espaciado alrededor del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #57b8ba; /* Fondo azul */
+    transition: background-color 0.3s ease; /* Transición de color al pasar el cursor */
+}
+
+nav ul li a:hover {
+    background-color: #0054A0; /* Cambio de color al pasar el cursor */
+}
+
+/* Estilos específicos para el contenido */
+main {
+    padding: 20px;
+}
+
+/* Estilos para los enlaces en los cursos */
+main a {
+    color: #0074E4; /* Color azul para los enlaces de los cursos */
+}
+
+/* Estilos para los cursos */
+.course {
+    border: 2px solid #0074E4; /* Borde azul */
+    padding: 10px;
+    margin-bottom: 10px;
+    display: inline-block; /* Hacer que los cursos se muestren en línea */
+    width: auto; /* Permitir que el ancho se ajuste automáticamente al contenido */
+}
+/* Estilos para los cursos */
+.course-group {
+    display: none; /* Oculta todos los grupos de cursos por defecto */
+}
+
+/* Estilos para las pseudo-clases :target */
+.course-group:target {
+    display: block; /* Muestra el grupo de cursos correspondiente cuando se hace clic en la categoría */
+}
+
+/* Media Query para Pantallas Pequeñas (ejemplo: dispositivos móviles) */
+@media (max-width: 768px) {
+    header {
+        padding: 5px; /* Reducir el espaciado de la barra de navegación */
+    }
+
+    nav ul li {
+        display: block; /* Convertir enlaces en elementos de bloque para una mejor legibilidad en dispositivos móviles */
+        margin-bottom: 10px; /* Agregar espacio entre los elementos */
+    }
+
+    main {
+        padding: 10px; /* Reducir el espaciado del contenido */
+    }
+}
+/* Estilos para las categorías "Inglés" y "Francés" */
+details summary {
+    text-align: center;
+    background-color: #0074E4; /* Fondo azul */
+    color: #fff; /* Letras blancas */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 20px; /* Espacio superior entre las categorías */
+}
+
+details summary {
+text-decoration: none;
+    color: #fff; /* Letras blancas */
+}
+/* formulario */
+div h1 form {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        form {
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #00bcd4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+/* información del sitio */
+div  {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #030607;
+    text-align: center;
+}
+div p {
+    line-height: 1.6;
+}
+
+
+

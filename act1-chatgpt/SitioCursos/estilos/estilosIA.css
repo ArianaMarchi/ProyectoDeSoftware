@@ -1,0 +1,73 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Fondo blanco */
+    color: #000; /* Letras negras */
+}
+
+header {
+    background-color: #00BFFF; /* Barra de navegación celeste */
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000; /* Letras negras */
+}
+
+/* Estilos específicos para el contenido */
+main {
+    padding: 20px;
+}
+
+/* Estilos para los enlaces en los cursos */
+main a {
+    color: #0074E4; /* Color azul para los enlaces de los cursos */
+}
+
+/* Estilos para los cursos */
+.course {
+    border: 2px solid #0074E4; /* Borde azul */
+    padding: 10px;
+    margin-bottom: 10px;
+    display: inline-block; /* Hacer que los cursos se muestren en línea */
+    width: auto; /* Permitir que el ancho se ajuste automáticamente al contenido */
+}
+/* Estilos para los cursos */
+.course-group {
+    display: none; /* Oculta todos los grupos de cursos por defecto */
+}
+
+/* Estilos para las pseudo-clases :target */
+.course-group:target {
+    display: block; /* Muestra el grupo de cursos correspondiente cuando se hace clic en la categoría */
+}
+
+/* Media Query para Pantallas Pequeñas (ejemplo: dispositivos móviles) */
+@media (max-width: 768px) {
+    header {
+        padding: 5px; /* Reducir el espaciado de la barra de navegación */
+    }
+
+    nav ul li {
+        display: block; /* Convertir enlaces en elementos de bloque para una mejor legibilidad en dispositivos móviles */
+        margin-bottom: 10px; /* Agregar espacio entre los elementos */
+    }
+
+    main {
+        padding: 10px; /* Reducir el espaciado del contenido */
+    }
+}
